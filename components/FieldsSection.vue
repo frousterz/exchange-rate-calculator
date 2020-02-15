@@ -26,7 +26,7 @@
         <div class="container mg__top">
           <div class="columns">
             <div class="column is-4">
-              <button class="button is-primary">swap</button>
+              <button class="button is-black">swap</button>
             </div>
           </div>
         </div>

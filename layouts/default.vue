@@ -33,10 +33,9 @@ export default {
 }
 
 #particles-js {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  margin-top: -53px;
 }
 
 .columns {
