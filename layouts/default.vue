@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .label {
   color: #fff !important;
 }
@@ -41,5 +41,21 @@ export default {
 .columns {
   padding: 0;
   margin: 0;
+}
+
+.mg{
+  &__top{
+    margin-top: 20px;
+    &--50 {
+      margin-top: 50px;
+    }
+  }
+
+  &__bt{
+    &--20 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
 }
 </style>

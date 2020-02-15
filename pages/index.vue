@@ -19,15 +19,18 @@
       >
       </vue-particles>
       <fields-section />
+      <tech />
   </div>
 </template>
 
 <script>
 import FieldsSection from '~/components/FieldsSection.vue'
+import Tech from '~/components/Tech.vue'
 
 export default {
   components: {
-    FieldsSection
+    FieldsSection,
+    Tech
   }
 }
 </script>

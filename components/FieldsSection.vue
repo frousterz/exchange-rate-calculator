@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div class="container mg__bt--20">
+        <div class="container mg__top">
           <div class="columns  is-centered">
             <div class="column is-4">
               <b-field
@@ -69,22 +69,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.mg{
-  &__top{
-    margin-top: 20px;
-    &--50 {
-      margin-top: 50px;
-    }
-  }
-
-  &__bt{
-    &--20 {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  }
-}
-</style>
-
