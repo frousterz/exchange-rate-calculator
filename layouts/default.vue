@@ -38,4 +38,9 @@ export default {
   height: 100vh;
   margin-top: -53px;
 }
+
+.columns {
+  padding: 0;
+  margin: 0;
+}
 </style>
