@@ -2,6 +2,15 @@
   <div class="is-fullwidth">
     <div class="container is-fullhd">
       <title-section />
+
+      <section>
+        <div class="columns is-centered mg__top">
+          <div class="column is-6 text-centered">
+            Choose the currency and the amounts to get the Exchange Rate
+          </div>
+        </div>
+      </section>
+
       <section>
         <div class="container mg__top--50">
           <div class="columns  is-centered">
@@ -133,19 +142,19 @@ export default {
     },
     swap() {
       let vm = this
-      let fromSelectedOption = $("#from-select option:selected" ).text()
-      let toSelectedOption = $("#to-select option:selected" ).text()
+      let fromSelectedOption = $("#from-select option:selected").text()
+      let toSelectedOption = $("#to-select option:selected").text()
       console.log('swap')
       console.log('fromSelectedOption: ', fromSelectedOption)
       console.log('toSelectedOption: ', toSelectedOption)
       // swap
-      $('#from-select').find("select, input").removeAttr("selected");
+      $('#from-select').children("option:selected").removeAttr("selected");
       $('#from-select').find(`.${toSelectedOption}`).attr('selected', 'selected')
-      $("#from-select option:selected" ).text(toSelectedOption)
+      // $("#from-select option:selected" ).text(toSelectedOption)
 
-      $('#to-select').find("select, input").removeAttr("selected");
+      $('#to-select').children("option:selected").removeAttr("selected");
       $('#to-select').find(`.${fromSelectedOption}`).attr('selected', 'selected')
-      $("#to-select option:selected" ).text(fromSelectedOption)
+      // $("#to-select option:selected" ).text(fromSelectedOption)
 
       // Update result
       vm.applyChange()

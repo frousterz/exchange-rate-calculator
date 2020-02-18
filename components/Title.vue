@@ -4,7 +4,6 @@
       <br><br>
       <div class="text-centered">
         <h1 class="title title--big">Exchange Rate Calculator</h1>
-        This is a simple project to learn some concepts while I learn more JavaScript.<br>
         The idea of this calculator was posted by
         <a href="https://medium.com/@indreklasn" target="__blank">
           <b-tag type="is-black">Indrek Lasn</b-tag>

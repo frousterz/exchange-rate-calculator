@@ -20,6 +20,14 @@ export default {
 </script>
 
 <style lang="scss">
+html, body {
+  background: #363636;
+}
+
+body{
+  padding: 20px;
+}
+
 .label {
   color: #fff !important;
 }
@@ -35,7 +43,7 @@ export default {
 #particles-js {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100;
 }
 
 .columns {

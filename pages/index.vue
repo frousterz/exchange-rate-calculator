@@ -28,6 +28,11 @@ import FieldsSection from '~/components/FieldsSection.vue'
 import Tech from '~/components/Tech.vue'
 
 export default {
+  head () {
+    return {
+      title: 'Exchange Rate Calculator'
+    }
+  },
   components: {
     FieldsSection,
     Tech
