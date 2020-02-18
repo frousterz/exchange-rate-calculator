@@ -12,7 +12,7 @@
       </div>
       <div class="text-centered mg__top">
         <a class="button is-info is-small">
-          vist his post
+          visit his post
         </a>
       </div>
     </div>
