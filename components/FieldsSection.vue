@@ -125,36 +125,26 @@ export default {
           )
       })
     },
-    addChangeEvents(){
+    addEvents(){
       let vm = this
-
       $('#from-select, #to-select').change(function(e){
         vm.applyChange()
       })
-
       $(".amount").bind("change paste keyup", function() {
         vm.applyChange()
       })
-
       $('span.icon.is-small').click(function() {
         vm.applyChange()
       })
     },
     swap() {
       let vm = this
-      let fromSelectedOption = $("#from-select option:selected").text()
-      let toSelectedOption = $("#to-select option:selected").text()
-      console.log('swap')
-      console.log('fromSelectedOption: ', fromSelectedOption)
-      console.log('toSelectedOption: ', toSelectedOption)
-      // swap
-      $('#from-select').children("option:selected").removeAttr("selected");
-      $('#from-select').find(`.${toSelectedOption}`).attr('selected', 'selected')
-      // $("#from-select option:selected" ).text(toSelectedOption)
-
-      $('#to-select').children("option:selected").removeAttr("selected");
-      $('#to-select').find(`.${fromSelectedOption}`).attr('selected', 'selected')
-      // $("#to-select option:selected" ).text(fromSelectedOption)
+      let fromSelectedOption = $('#from-select').children('option:selected').text()
+      let toSelectedOption = $('#to-select').children('option:selected').text()
+      $('#from-select').children().removeAttr('selected')
+      $(`#from-select option[class="${toSelectedOption}"]`).prop("selected", true)
+      $('#to-select').children().removeAttr('selected')
+      $(`#to-select option[class="${fromSelectedOption}"]`).prop("selected", true)
 
       // Update result
       vm.applyChange()
@@ -162,7 +152,7 @@ export default {
   },
   mounted () {
     this.setData()
-    this.addChangeEvents()
+    this.addEvents()
   }
 }
 </script>
